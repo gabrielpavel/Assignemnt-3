@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1em;
+        }
+
+        #text {
+            margin-left: 5%;
+            width: 90%;
+            text-align: justify;
+
+        }
+
+        h3 {
+            color: gray;
+
+        }
+
+
+
+        #whole {
+
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+
+        #header {
+            width: 25%;
+            height: 40px;
+            margin-left: 5%;
+
+        }
+
+
+        .cell {
+
+            height: 190px;
+            background: linear-gradient(#4c6ead 75%, #d3cbcb 25%);
+            text-align: center;
+
+        }
+
+
+        .grid {
+
+            display: grid;
+            margin-left: 5%;
+            width: 90%;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+
+
+        }
+
+        img {
+            width: 100%;
+            height: 80%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #text {
+                font-size: 0.9em;
+                width: 75%;
+                margin-left: 12%;
+            }
+
+            .grid {
+                margin-left: 12%;
+                width: 75%;
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            #header {
+                margin-left: 12%;
+                width: 75%;
+
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            #text {
+                margin-left: 35%;
+                font-size: 0.8em;
+                width: 45%;
+            }
+
+
+
+            #header {
+                width: 45%;
+                margin-left: 35%;
+            }
+
+            .grid {
+                margin-left: 35%;
+                width: 45%;
+                grid-template-columns: repeat(1, 1fr);
+
+
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .grid {
+                width: 35%;
+            }
+
+            #text {
+                width: 35%;
+            }
+
+            #header {
+                width: 350%;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="whole">
+        <div id="header">
+            <h3>Gallery Heading</h3>
+        </div>
+
+        <div class="grid">
+
+            <div class="cell"><img src="placeholder-image.png" alt="picture1">Picture1</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture2">Picture2</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture3">Picture3</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture4">Picture4</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture5">Picture5</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture6">Picture6</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture7">Picture7</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture8">Picture8</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture9">Picture9</div>
+            <div class="cell"><img src="placeholder-image.png" alt="picture10">Picture10</div>
+
+        </div>
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
